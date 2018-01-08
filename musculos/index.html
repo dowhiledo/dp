@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form id="form" action="#" method="post">
+<div class="col-md-12">
+<table class="table table-bordered tabla1mus ">
+    <thead>
+    <tr>
+        <th class="col-md-1"></th>
+        <th class="col-md-2">EXCELENTE:1</th>
+        <th class="col-md-2">PROMEDIO:2</th>
+        <th class="col-md-2">REGULAR:3</th>
+        <th class="col-md-2">POBRE:4</th>
+        <th class="col-md-1">PUNTOS</th>
+        <th class="col-md-2">OBSERVACIONES</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="text-center">Flexibilidad Fuerza/ABDOMEN</td>
+        <td class="text-center">
+        <img src=../imagenes//cerdo.jpg class="filamus fila1" width=160 height=160 data-puntos=1></td>
+        <td><img src=../imagenes//tigre.jpg class="filamus fila1" width=160 height=160 data-puntos=2></td>
+        <td><img src=../imagenes//ojo.jpg class="filamus fila1" width=160 height=160 data-puntos=3></td>
+        <td><img src=../imagenes//ojo.jpg class="filamus fila1" width=160 height=160 data-puntos=3></td>
+
+        <td class="text-center"><input type="text" class="ptsFila ptsFilaTab1" name="ptsFlexFuerzaAb" readonlyvalue=0></input></td>
+        <td rowspan="4">
+            <textarea name="observacionesTabla1" id="observacionesTab1">a</textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>CADERA</td>
+        <td><img src=../imagenes//cerdo1.jpg class="filamus fila2" width=160 height=160 data-puntos=1></td>
+        <td><img src=../imagenes//tigre1.jpg class="filamus fila2" width=160 height=160 data-puntos=2></td>
+        <td><img src=../imagenes//ojo1.jpg class="filamus fila2" width=160 height=160 data-puntos=3></td>
+        <td><img src=../imagenes//ojo1.jpg class="filamus fila2" width=160 height=160 data-puntos=3></td>
+        <td class="text-center"><label class="ptsFila ptsFilaTab1" name="ptsCadera" >0</label></td>
+    </tr>
+    <tr>
+        <td colspan=5 class="text-right">
+        TOTAL
+        </td>
+        <td colspan=1 class="text-center">
+            <label for="" id="ptsTotalTab1" class="resultTotalTab resultTotalTab2">0</label>
+
+        </td>
+    </tr>
+
+    </tbody>
+</table>
+</div>
+<p> ----------------------------------------------- tabla 2-----------------------------</p>
+<!---------------------TABLA 2 ------------------------>
+<div class="col-md-12">
+<table class="table table-bordered tabla1mus ">
+    <thead>
+    <tr>
+        <th class="col-md-3">RANGOS ARTICULARES</th>
+        <th class="col-md-2">Óptimo:1</th>
+        <th class="col-md-2">Limitado:2</th>
+        <th class="col-md-2">Muy Limitado:3</th>
+
+        <th class="col-md-1">PTOS.</th>
+        <th class="col-md-2">Dolor contra resistencia**<br> Si / No </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Abducción de hombro (Normal 0° - 180°)</td>
+        <td><img src=../imagenes//cerdo.jpg class="filamus fila1" width=160 height=160 data-puntos=1></td>
+        <td><img src=../imagenes//tigre.jpg class="filamus fila1" width=160 height=160 data-puntos=2></td>
+        <td><img src=../imagenes//ojo.jpg class="filamus fila1" width=160 height=160 data-puntos=3></td>
+
+        <td class="text-center"><label class="ptsFila ptsFilaTab2">0</label></td>
+        <td>
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default">
+                    <input type="radio" id="q156" name="rbtnf1" value="1"/> Si
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" id="q157" name="rbtnf1" value="0"/> No
+                </label>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>Abducción de hombro (Normal 0° - 60°)</td>
+        <td><img src=../imagenes//cerdo1.jpg class="filamus fila2" width=160 height=160 data-puntos=1></td>
+        <td><img src=../imagenes//tigre1.jpg class="filamus fila2" width=160 height=160 data-puntos=2></td>
+        <td><img src=../imagenes//ojo1.jpg class="filamus fila2" width=160 height=160 data-puntos=3></td>
+        <td class="text-center"><label for="" class="ptsFila ptsFilaTab2">0</label></td>
+        <td>HOLA AQUÍ VA UN RADIOBUTTON</td>
+    </tr>
+    <tr>
+       <td colspan="3">OBSERVACIONES</td>
+        <td class="text-right">
+        TOTAL
+        </td>
+        <td colspan=1 class="text-center">
+            <label for="" id="ptsTotalTab2" class="resultTotalTab resultTotalTab2">0</label>
+        </td>
+        <td>
+
+        </td>
+    </tr>
+    <tr>
+           <td colspan="6">
+            <textarea name="observacionesTabla2" id="observacionesTab2" cols="120" rows="4"></textarea>
+            </td>
+    </tr>
+    </tbody>
+</table>
+<p class="">
+ * En Ptos colocar el grado que corresponde a la capacidad del paciente,<br>
+** Repetir cada movimiento contra resistencia leve a moderada y evaluar fortaleza y presencia de dolor.
+</p>
+</div>
+
+<button value="Submit" type="submit">Login</button>
+</form>
+
+<!------------------------ script   ---------------------------------------->
+<script src="../libs/jquery321.js"></script>
+<script src="../libs/bootstrap-3.3.7-dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+
+        var classImgSelected = "imgSelected";
+        $(".filamus").click(function () {
+            var row = this.parentNode.parentNode;
+            var tbody = row.parentNode;
+            var resultLabelFila = row.getElementsByClassName("ptsFila")[0];
+            //resultLabelFila.innerHTML = (this.dataset.puntos);
+
+            // quita clase imgSelected a fila actual y
+            // la agrega a imagen actual
+            var listImagenesFila = row.getElementsByTagName("img");
+            for (var i = 0; i < listImagenesFila.length; i++) {
+                var obj = listImagenesFila[i];
+                obj.classList.remove(classImgSelected);
+            }
+            this.classList.add(classImgSelected);
+
+            //var resultLabelTotal = tbody.getElementsByClassName("resultTotalTab")[0];
+
+            var suma = calcularPuntos(tbody);
+            tbody.getElementsByClassName("resultTotalTab")[0].innerHTML=suma;
+            enviar();
+
+        });
+
+        var calcularPuntos = function (nodo) {
+            var lista = nodo.getElementsByClassName("ptsFila");
+            var suma = 0;
+            // suma los puntos de las filas de la tabla actual
+            for (var i = 0; i < lista.length; i++) {
+                var n = parseInt(lista[i].innerHTML,10);
+                suma += n;
+            }
+            return suma;
+        }
+
+        var enviar = function(){
+            var formData = ($("#form").serializeArray());
+
+            formData.push({
+                name: 'nameOfLabel',
+                value: 'value to add'
+            });
+
+
+            console.log(formData);
+        }
+
+
+    });
+</script>
+
+<style>
+
+
+    .filamus {
+        border: .3em solid #eae7ff;
+        cursor: pointer;
+    }
+
+    .imgSelected {
+        border: .3em solid #6191db;
+    }
+
+    .aa {
+        border: 1px solid red;
+        vertical-align: middle;
+
+    }
+
+    td{
+        //background-color: aqua;
+        vertical-align: middle !important;
+
+    }
+
+    .tabla1mus .ptsFila{
+        text-align: center;
+        background-color: transparent;
+        border: 1px solid red;
+        max-width: 2em;
+    }
+
+
+    #observacionesTab1 {
+        width: 100%;
+        height: 100%;
+        min-height: 20em;
+        max-width: 20em;
+    }
+
+
+
+
+
+</style>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="../libs/bootstrap-3.3.7-dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

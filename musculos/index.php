@@ -298,11 +298,6 @@ $f44 = crearImg($ruta, $ficheros[$iImg++], $claseFilaImg, $width,$height, 4);
 //                var obj = listImagenesFila[i];
 //                obj.classList.remove(classImgSelected);
 //            }
-
-
-
-
-
             this.classList.add(classImgSelected);
 
             // puntos totales de tabla actual
